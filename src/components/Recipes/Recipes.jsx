@@ -23,6 +23,7 @@ const Recipes = () => {
 
     if (!isExit) {
       setCook([...cook, addToCook]);
+      
     } else {
       toast("Recipe already exists", { type: "error" });
     }
@@ -91,7 +92,7 @@ const Recipes = () => {
                 </tr>
               </thead>
 
-              <tbody className="bg-base-200 ">
+              <tbody className="bg-base-200 text-base font-semibold text-[#878787]">
                 {cook.map((item, index) => (
                   <tr key={index}>
                     <th>{index + 1}</th>
@@ -132,7 +133,7 @@ const Recipes = () => {
                   <th>Calories</th>
                 </tr>
               </thead>
-              <tbody className="bg-base-200">
+              <tbody className="bg-base-200 text-base font-semibold text-[#878787]">
                 {currentlyCooking.map((item, index) => (
                   <tr key={index}>
                     <th>{index + 1}</th>
