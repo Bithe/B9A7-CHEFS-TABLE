@@ -16,7 +16,7 @@
     {
       "recipe_id": 2,
       "recipe_name": "Vegetable Pasta",
-      "recipe_image": "https://ibb.co/1vmQVhP",
+      "recipe_image": "https://i.ibb.co/1vmQVhP/vegetable-pasta.jpg",
       "short_description": "Homemade vegetable pasta with fresh ingredients",
       "ingredients": [
         "300 g pasta",
@@ -33,12 +33,12 @@
     {
       "recipe_id": 3,
       "recipe_name": "Grilled Salmon",
-      "recipe_image": "grilled_salmon.jpg",
-      "short_description": "Grilled salmon fillets with lemon and herbs",
+      "recipe_image": "https://i.ibb.co/g7Rb6rg/your-image-file.jpg",
+      "short_description": "Grilled salmon fillets with lemon",
       "ingredients": [
         "4 salmon fillets",
-        "2 lemons",
-        "2 tbsp olive oil",
+        "2 lemons and basil",
+        "2 tbsp olive oil with nut",
         "Salt and pepper to taste"
       ],
       "preparing_time": "20 min",
@@ -47,12 +47,12 @@
     {
       "recipe_id": 4,
       "recipe_name": "Caprese Salad",
-      "recipe_image": "caprese_salad.jpg",
-      "short_description": "Classic Caprese salad with tomatoes, mozzarella, and basil",
+      "recipe_image": "https://i.ibb.co/pdHbcjK/grilled-salmon.jpg",
+      "short_description": "Classic Caprese salad with tomatoes",
       "ingredients": [
         "4 ripe tomatoes",
-        "200 g fresh mozzarella cheese",
-        "Handful of fresh basil leaves",
+        "200 g fresh cheese",
+        "Handful of fresh leaves",
         "2 tbsp balsamic vinegar",
         "2 tbsp olive oil",
         "Salt and pepper to taste"
@@ -63,7 +63,7 @@
     {
       "recipe_id": 5,
       "recipe_name": "Vegetable Curry",
-      "recipe_image": "vegetable_curry.jpg",
+      "recipe_image": "https://i.ibb.co/BBJ6bQZ/vegetable_curry.jpg",
       "short_description": "Spicy vegetable curry with coconut milk",
       "ingredients": [
         "1 onion",
@@ -82,12 +82,12 @@
     {
       "recipe_id": 6,
       "recipe_name": "Banana Bread",
-      "recipe_image": "banana_bread.jpg",
+      "recipe_image": "https://i.ibb.co/WBD8FF0/banana_bread.jpg",
       "short_description": "Moist and flavorful banana bread",
       "ingredients": [
         "3 ripe bananas",
         "150 g sugar",
-        "1/3 cup melted butter",
+        "1/3 cup butter",
         "1 egg",
         "1 tsp vanilla extract",
         "1 tsp baking soda",

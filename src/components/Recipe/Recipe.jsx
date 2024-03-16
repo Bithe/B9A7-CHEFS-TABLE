@@ -1,46 +1,53 @@
-import clockIcon from "../../images/clock.png";
 
-const Recipe = ({ recipe }) => {
+const Recipe = ({ recipe, handleCook }) => {
   return (
-    <div>
-      <div className="card card-compact p-6 border-2 border-gray-300 m-3">
-        <figure>
-          <img className="" src={recipe.recipe_name} alt="Shoes" />
-        </figure>
+    <div className="card card-compact p-4 border-2 border-gray-300">
+      <img
+        className="h-auto rounded-2xl w-full border-4 border-red-600"
+        src={recipe.recipe_image}
+        alt="Shoes"
+      />
 
-        <div className="card-body space-y-2">
+      <div className=" space-y-4 mt-4">
+        <div>
           <h2 className="text-xl font-semibold">{recipe.recipe_name}</h2>
-          <p className="text-[#878787] font-normal text-base">{recipe.short_description} </p>
-          <hr />
+          <p className="text-[#878787] font-normal text-base">
+            {recipe.short_description}{" "}
+          </p>
+        </div>
 
-          <h3 className="text-lg font-medium">Ingredients: 6</h3>
+        <hr />
 
-          <ul className="list-disc px-8 text-[#878787] text-lg font-normal">
+        <h3 className="text-lg font-medium">Ingredients: 6</h3>
+
+        <div className="py-2 px-8">
+          <ul className="list-disc text-[#878787] text-lg font-normal">
             <li>{recipe.ingredients[0]}</li>
             <li>{recipe.ingredients[1]}</li>
             <li>{recipe.ingredients[2]}</li>
             <li>{recipe.ingredients[3]}</li>
-           
           </ul>
+        </div>
 
-          <hr />
+        <hr />
 
-          <div className="flex gap-4 ">
-            <div className="flex gap-4">
-              <img src={clockIcon} alt="" />
-              <p>30 minutes</p>
+        <div className="flex gap-2 justify-around items-center justify-center ">
+
+          <div className="flex gap-4 text-base font-normal text-[#878787]">
+            <div className=" gap-4">
+              <p>{recipe.preparing_time}</p>
             </div>
 
-            <div className="flex gap-4">
-              <img src={clockIcon} alt="" />
-              <p>30 minutes</p>
+            <div className=" gap-2">
+              <p>{recipe.calories}</p>
             </div>
           </div>
 
-          <div className="card-actions rounded-full ">
-            <button className="btn rounded-full text-black bg-[#0BE58A] text-lg font-medium">
-              Want to Cook
-            </button>
+          <div>
+
+          <button onClick={(e)=> handleCook(recipe)} className="btn text-lg font-medium rounded-full bg-[#0BE58A] "> Want to Cook</button>
+
+
           </div>
         </div>
       </div>
