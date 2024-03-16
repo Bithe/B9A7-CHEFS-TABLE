@@ -35,7 +35,6 @@ const Recipes = () => {
   // handle preparing
 
   const handlePreparing = (preparingItems) => {
-    setCurrentlyCookingCount(count);
 
     const newCooking = cook.filter(
       (preparingItem) => preparingItems.recipe_id !== preparingItem.recipe_id
@@ -43,6 +42,9 @@ const Recipes = () => {
     setCook(newCooking);
     setCurrentlyCooking([...currentlyCooking, preparingItems]);
     setCount(count-1);
+
+    setCurrentlyCookingCount(currentlyCookingCount+1);
+
 
   };
 
