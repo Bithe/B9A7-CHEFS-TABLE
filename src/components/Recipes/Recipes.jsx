@@ -32,8 +32,10 @@ const Recipes = () => {
 
   const handlePreparing = (preparingItems) => {
     const newCooking = cook.filter(
-      (preparingItem) => preparingItems.recipe_id !== preparingItem.recipe_id);
-      setCook(newCooking);
+      (preparingItem) => preparingItems.recipe_id !== preparingItem.recipe_id
+    );
+    setCook(newCooking);
+    setCurrentlyCooking([...currentlyCooking, preparingItems]);
   };
 
 
@@ -99,7 +101,9 @@ const Recipes = () => {
 
                     <td>
                       <button
-                        onClick={(e) => handlePreparing(item)}
+                        onClick={(e) => {
+                          handlePreparing(item);
+                        }}
                         className="btn text-base bg-[#0BE58A] rounded-full font-medium"
                       >
                         Preparing
@@ -128,13 +132,15 @@ const Recipes = () => {
                   <th>Calories</th>
                 </tr>
               </thead>
-              <tbody className="bg-base-200 ">
-                <tr>
-                  <th>1</th>
-                  <td>Cy Ganderton</td>
-                  <td>Quality Control Specialist</td>
-                  <td>kjckjdsbh</td>
-                </tr>
+              <tbody className="bg-base-200">
+                {currentlyCooking.map((item, index) => (
+                  <tr key={index}>
+                    <th>{index + 1}</th>
+                    <td>{item.recipe_name}</td>
+                    <td>{item.preparing_time}</td>
+                    <td>{item.calories}</td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>
