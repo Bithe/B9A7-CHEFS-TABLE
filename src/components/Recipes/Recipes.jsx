@@ -6,8 +6,10 @@ import "react-toastify/dist/ReactToastify.css";
 const Recipes = () => {
   const [recipes, setRecipes] = useState([]);
   const [cook, setCook] = useState([]);
-
   const [currentlyCooking, setCurrentlyCooking] = useState([]);
+  // count
+  const [count, setCount] = useState(0);
+  const [currentlyCookingCount, setCurrentlyCookingCount] = useState(0);
 
   useEffect(() => {
     fetch("./foodsData.json")
@@ -23,6 +25,7 @@ const Recipes = () => {
 
     if (!isExit) {
       setCook([...cook, addToCook]);
+      setCount(count+1);
       
     } else {
       toast("Recipe already exists", { type: "error" });
@@ -32,11 +35,15 @@ const Recipes = () => {
   // handle preparing
 
   const handlePreparing = (preparingItems) => {
+    setCurrentlyCookingCount(count);
+
     const newCooking = cook.filter(
       (preparingItem) => preparingItems.recipe_id !== preparingItem.recipe_id
     );
     setCook(newCooking);
     setCurrentlyCooking([...currentlyCooking, preparingItems]);
+    setCount(count-1);
+
   };
 
 
@@ -72,10 +79,7 @@ const Recipes = () => {
         <div className="p-4 border-2 border-gray-300 rounded-2xl lg:w-[35%]">
           {
             <h1 className=" text-2xl font-semibold text-center p-4">
-              Want to cook:{" "}
-              {cook.map((item, index) => (
-                <p key={index}>{index}</p>
-              ))}
+              Want to cook: {count}
             </h1>
           }
           <hr />
@@ -118,7 +122,7 @@ const Recipes = () => {
           {/* TABLE ENDS 1 */}
 
           <h1 className=" text-2xl font-semibold text-center p-4">
-            Want to cook: 01
+          Currently cooking: {currentlyCookingCount}
           </h1>
           <hr />
 
