@@ -3,7 +3,7 @@ const Recipe = ({ recipe, handleCook }) => {
   return (
     <div className="card card-compact p-4 border-2 border-gray-300">
       <img
-        className="h-auto rounded-2xl w-full border-4 border-red-600"
+        className="h-auto rounded-2xl w-full "
         src={recipe.recipe_image}
         alt="Shoes"
       />
@@ -18,7 +18,7 @@ const Recipe = ({ recipe, handleCook }) => {
 
         <hr />
 
-        <h3 className="text-lg font-medium">Ingredients: 6</h3>
+        <h3 className="text-lg font-medium">Ingredients: {recipe.ingredients.length}</h3>
 
         <div className="py-2 px-8">
           <ul className="list-disc text-[#878787] text-lg font-normal">

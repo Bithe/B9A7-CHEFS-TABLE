@@ -25,8 +25,7 @@ const Recipes = () => {
 
     if (!isExit) {
       setCook([...cook, addToCook]);
-      setCount(count+1);
-      
+      setCount(count + 1);
     } else {
       toast("Recipe already exists", { type: "error" });
     }
@@ -35,24 +34,20 @@ const Recipes = () => {
   // handle preparing
 
   const handlePreparing = (preparingItems) => {
-
     const newCooking = cook.filter(
       (preparingItem) => preparingItems.recipe_id !== preparingItem.recipe_id
     );
     setCook(newCooking);
     setCurrentlyCooking([...currentlyCooking, preparingItems]);
-    setCount(count-1);
+    setCount(count - 1);
 
-    setCurrentlyCookingCount(currentlyCookingCount+1);
-
-
+    setCurrentlyCookingCount(currentlyCookingCount + 1);
   };
-
 
   return (
     <section className="container mx-auto px-1 lg:px-24">
       <div className="text-center">
-        <h3 className="text-4xl font-bold">Latest Posts</h3>
+        <h3 className="text-4xl font-bold">Our Recipes</h3>
 
         <p className="space-y-8 m-8">
           Italian cuisine is renowned for its rich flavors and comforting
@@ -124,7 +119,7 @@ const Recipes = () => {
           {/* TABLE ENDS 1 */}
 
           <h1 className=" text-2xl font-semibold text-center p-4">
-          Currently cooking: {currentlyCookingCount}
+            Currently cooking: {currentlyCookingCount}
           </h1>
           <hr />
 

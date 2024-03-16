@@ -73,7 +73,7 @@ const Header = () => {
             <div className="form-control">
               <input
                 type="text"
-                placeholder=""
+                placeholder="Search"
                 className="search-input input input-bordered lg:w-60 w-16 md:w-auto rounded-full px-10"
               />
             </div>
