@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header>
       {/* NAVBAR STARTS */}
-      <div className="container mx-auto lg:px-24 py-8">
+      <div className="container mx-auto lg:px-24 lg:py-8">
         <div className="navbar bg-base-100">
           <div className="navbar-start">
             <div className="dropdown">
