@@ -147,6 +147,13 @@ const Recipes = () => {
             </table>
           </div>
           {/* TABLE ENDS 2 */}
+
+          <div>
+            <div className="flex justify-end gap-10 text-base font-medium">
+              <h3>Total Time =</h3>
+              <h3>Total Calories =  </h3>
+            </div>
+          </div>
         </div>
       </div>
     </section>
