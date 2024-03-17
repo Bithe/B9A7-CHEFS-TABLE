@@ -116,7 +116,7 @@ const Header = () => {
               <button className="btn rounded-full lg:text-xl font-semibold bg-[#0BE58A] px-8 border-none">
               Explore Now
               </button>
-              <button className="btn btn-outline rounded-full text-white px-8">
+              <button className="btn btn-outline lg:text-xl font-semibold rounded-full text-white px-8">
               Our Feedback
               </button>
             </div>
