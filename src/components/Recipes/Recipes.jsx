@@ -83,7 +83,7 @@ const Recipes = () => {
 
           {/* TABLE 1*/}
           <div className="overflow-x-auto py-8 ">
-            <table className="table table-xs">
+            <table className="table table-xs py-8">
               <thead className="">
                 <tr>
                   <th></th>
