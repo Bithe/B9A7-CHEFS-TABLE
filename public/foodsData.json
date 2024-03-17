@@ -2,13 +2,16 @@
     {
       "recipe_id": 1,
       "recipe_name": "Chicken Stir-Fry",
-      "recipe_image": "https://i.ibb.co/kK2KQ36/chicken-stir-fry.jpg",
+      "recipe_image": "https://i.ibb.co/CwnP0Hy/nadine-primeau-ft-Wfohtj-Nw-unsplash.jpg",
       "short_description": "Delicious and healthy chicken stir-fry with vegetables",
       "ingredients": [
         "550 g chicken breast",
         "120 ml soy sauce",
         "200 g basil leaves",
-        "400 g mushrooms"
+        "400 g mushrooms",
+        "red pepper",
+        "Fresh ginger"
+
       ],
       "preparing_time": "30 min",
       "calories": "320 calories"
@@ -16,13 +19,15 @@
     {
       "recipe_id": 2,
       "recipe_name": "Vegetable Pasta",
-      "recipe_image": "https://i.ibb.co/1vmQVhP/vegetable-pasta.jpg",
+      "recipe_image": "https://i.ibb.co/VqVkFQJ/top-view-tasty-meat-soup-with-potatoes-seasonings-dark-desk.jpg",
       "short_description": "Homemade vegetable pasta with fresh ingredients",
       "ingredients": [
         "300 g pasta",
         "2 bell peppers",
         "1 zucchini",
-        "4 cloves garlic"
+        "4 cloves garlic",
+        "2 Tbsp honey",
+        "chicken broth"
       ],
       "preparing_time": "25 min",
       "calories": "280 calories"
@@ -30,13 +35,15 @@
     {
       "recipe_id": 3,
       "recipe_name": "Grilled Salmon",
-      "recipe_image": "https://i.ibb.co/g7Rb6rg/your-image-file.jpg",
+      "recipe_image": "https://i.ibb.co/9qsfLQ7/matthew-hamilton-RA4mwm9-j-KA-unsplash.jpg",
       "short_description": "Grilled salmon fillets with lemon",
       "ingredients": [
         "4 salmon fillets",
         "2 lemons and basil",
         "2 tbsp olive oil with nut",
-        "Salt and pepper to taste"
+        "Salt and pepper to taste",
+        "3 tbspn tomato"
+
       ],
       "preparing_time": "20 min",
       "calories": "350 calories"
@@ -44,14 +51,14 @@
     {
       "recipe_id": 4,
       "recipe_name": "Caprese Salad",
-      "recipe_image": "https://i.ibb.co/pdHbcjK/grilled-salmon.jpg",
+      "recipe_image": "https://i.ibb.co/jLmFpyF/davies-designs-studio-f5-lfi2-S-d4-unsplash.jpg",
       "short_description": "Classic Caprese salad with tomatoes",
       "ingredients": [
         "4 ripe tomatoes",
         "200 g fresh cheese",
-       
         "2 tbsp olive oil",
-        "Salt and pepper to taste"
+        "Salt and pepper to taste",
+        "2 onion paste"
       ],
       "preparing_time": "15 min",
       "calories": "200 calories"
@@ -59,7 +66,7 @@
     {
       "recipe_id": 5,
       "recipe_name": "Vegetable Curry",
-      "recipe_image": "https://i.ibb.co/BBJ6bQZ/vegetable_curry.jpg",
+      "recipe_image": "https://i.ibb.co/4m7dqLv/alina-chernysheva-oj2h-Bf5-TOFM-unsplash.jpg",
       "short_description": "Spicy vegetable curry with coconut milk",
       "ingredients": [
         "1 onion",
@@ -71,10 +78,12 @@
       "preparing_time": "40 min",
       "calories": "280 calories"
     },
+
+
     {
       "recipe_id": 6,
       "recipe_name": "Banana Bread",
-      "recipe_image": "https://i.ibb.co/WBD8FF0/banana_bread.jpg",
+      "recipe_image": "https://i.ibb.co/3RGK6D0/dragne-marius-Edzs-UFq-Hba-Y-unsplash.jpg",
       "short_description": "Moist and flavorful banana bread",
       "ingredients": [
         "150 g sugar",

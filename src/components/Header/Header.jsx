@@ -113,11 +113,11 @@ const Header = () => {
             </p>
 
             <div className="py-4 space-x-6">
-              <button className="btn rounded-full lg:text-xl font-semibold bg-[#0BE58A] px-8">
+              <button className="btn rounded-full lg:text-xl font-semibold bg-[#0BE58A] px-8 border-none">
               Explore Now
               </button>
               <button className="btn btn-outline rounded-full text-white px-8">
-              Our Feedback.
+              Our Feedback
               </button>
             </div>
           </div>
