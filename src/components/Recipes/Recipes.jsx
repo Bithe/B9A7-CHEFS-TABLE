@@ -45,7 +45,7 @@ const Recipes = () => {
   };
 
   return (
-    <section className="container mx-auto px-1 lg:px-24">
+    <section className="container mx-auto px-1 lg:px-24 mb-10">
       <div className="text-center">
         <h3 className="text-4xl font-bold">Our Recipes</h3>
 

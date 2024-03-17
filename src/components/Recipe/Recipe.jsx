@@ -5,7 +5,7 @@ const Recipe = ({ recipe, handleCook }) => {
   return (
     <div>
     
-      <div className="card bg-base-100 shadow-xl">
+      <div className="card shadow-xl border-2 border-[#28282833]">
         <figure className="px-10 pt-10">
           <img
             src={recipe.recipe_image}
@@ -39,8 +39,8 @@ const Recipe = ({ recipe, handleCook }) => {
           <hr />
 
 
-          <div className="flex items-center justify-center justify-between ">
-            <div className="flex text-base font-normal text-[#878787] gap-4">
+          <div className="flex items-center justify-center justify-between">
+            <div className="flex text-base font-normal text-[#878787] gap-3 ">
               <div className=" flex gap-1 ">
                 <img src={clockIcon} alt="" />
                 <p>{recipe.preparing_time}</p>
