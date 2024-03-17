@@ -1,3 +1,5 @@
+import fireIcon from "../../images/fire.png";
+import clockIcon from "../../images/clock.png";
 
 const Recipe = ({ recipe, handleCook }) => {
   return (
@@ -18,7 +20,9 @@ const Recipe = ({ recipe, handleCook }) => {
 
         <hr />
 
-        <h3 className="text-lg font-medium">Ingredients: {recipe.ingredients.length}</h3>
+        <h3 className="text-lg font-medium">
+          Ingredients: {recipe.ingredients.length}
+        </h3>
 
         <div className="py-2 px-8">
           <ul className="list-disc text-[#878787] text-lg font-normal">
@@ -32,22 +36,27 @@ const Recipe = ({ recipe, handleCook }) => {
         <hr />
 
         <div className="flex gap-2 justify-around items-center justify-center ">
+          <div className="flex flex-1  gap-4 text-base font-normal text-[#878787]">
 
-          <div className="flex gap-4 text-base font-normal text-[#878787]">
-            <div className=" gap-4">
+            <div className=" flex gap-4">
+              <img src={clockIcon} alt="" />
               <p>{recipe.preparing_time}</p>
             </div>
 
-            <div className=" gap-2">
+            <div className="flex gap-2">
+              <img src={fireIcon} alt="" />
               <p>{recipe.calories}</p>
             </div>
           </div>
 
           <div>
-
-          <button onClick={(e)=> handleCook(recipe)} className="btn text-lg font-medium rounded-full bg-[#0BE58A] "> Want to Cook</button>
-
-
+            <button
+              onClick={(e) => handleCook(recipe)}
+              className="btn text-lg font-medium rounded-full bg-[#0BE58A] "
+            >
+              {" "}
+              Want to Cook
+            </button>
           </div>
         </div>
       </div>
